@@ -11,6 +11,6 @@ jobs:
     - uses: actions/checkout@v1
     - name: Run a one-line script
       with:
-        submodules: true # 'recursive' 'true' or 'false'
-        token: ${{ secrets.TOKEN }} # `GitHub_PAT` is a secret contains your PAT.
-        run: echo Hello, world!
+        submodules: true 
+        token: ${{ secrets.TOKEN }} 
+    
