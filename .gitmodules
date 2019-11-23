@@ -1,0 +1,3 @@
+[submodule "SubmoduleforPages"]
+	path = SubmoduleforPages
+	url = https://github.com/staceb/SubmoduleforPages.git
