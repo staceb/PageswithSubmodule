@@ -1,0 +1,16 @@
+name: Update Submodule
+
+on: [repository_dispatch]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Run a one-line script
+      with:
+        submodules: true # 'recursive' 'true' or 'false'
+        token: ${{ secrets.TOKEN }} # `GitHub_PAT` is a secret contains your PAT.
+        run: echo Hello, world!
