@@ -1,15 +1,13 @@
 name: Update Submodule
 
-on: [repository_dispatch]
+on: repository_dispatch
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
-
     steps:
-    - uses: actions/checkout@v1
-    - name: Run a one-line script
+    - name: Checkout repository
+      uses: actions/checkout@v1
       with:
         submodules: true 
         token: ${{ secrets.TOKEN }} 
