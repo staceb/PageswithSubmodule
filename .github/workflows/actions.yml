@@ -13,6 +13,7 @@ jobs:
         token: ${{ secrets.TOKEN }} 
     - run: |
         git checkout master
+        git submodule update --init --recursive
         git status
       
   
