@@ -16,6 +16,7 @@ jobs:
         git config --global user.name "staceb"
         git checkout master
         git submodule update --remote --merge
+        git add .
         git commit -m "update submodule" 
         git push origin master
       
