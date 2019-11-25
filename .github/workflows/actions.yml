@@ -9,10 +9,10 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v1
       with:
-        submodules: true 
+        submodules: recursive 
         token: ${{ secrets.TOKEN }} 
     - run: |
-        git submodule update --init --recursive
+        git checkout master
         git status
       
   
