@@ -14,7 +14,8 @@ jobs:
     - run: |
         git checkout master
         git submodule update --remote --merge
-        git status
+        git commit -m "update submodule" 
+        git push origin master
       
   
     
