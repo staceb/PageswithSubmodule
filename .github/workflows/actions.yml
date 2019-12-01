@@ -18,7 +18,9 @@ jobs:
         git submodule update --remote --merge
         git add .
         git commit -m "update submodule" 
-        git push origin master
-      
+    - name: Push changes
+      uses: ad-m/github-push-action@master
+      with:
+        token: ${{ secrets.TOKEN }}
   
     
